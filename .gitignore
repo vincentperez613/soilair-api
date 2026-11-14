@@ -1,0 +1,9 @@
+node_modules/
+
+# Configuración local de la CLI de Vercel (vercel link / vercel env pull).
+.vercel/
+
+# Secretos: las llaves VAPID y la cadena de la base viven solo en el entorno.
+.env
+.env.*
+!.env.example

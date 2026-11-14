@@ -1,0 +1,21 @@
+{
+  "name": "soilair-api",
+  "version": "1.0.0",
+  "description": "Backend de SoilAir para Vercel: sesiones, bitácora de campo y notificaciones push (Web Push con VAPID).",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.6"
+  },
+  "scripts": {
+    "dev": "node --env-file=.env --watch src/servidor.js",
+    "llaves": "node scripts/generar-llaves.js"
+  },
+  "dependencies": {
+    "@vercel/functions": "3.10.5",
+    "cors": "2.8.6",
+    "express": "5.3.0",
+    "pg": "8.23.1",
+    "web-push": "3.6.7"
+  }
+}
